@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lego Collection</title>
+  <link rel="stylesheet" href="/css/main.css" />
+</head>
+
+<body >
+    <%- include('partials/navbar', {page: "/lego/sets"}) %>
+
+
+    <div class="container mx-auto">
+        <div class="hero bg-base-200 rounded-lg p-6">
+            <div class="hero-content text-center ">
+              <div class="max-w-md">
+                <h1 class="text-5xl font-bold">Collection</h1>
+                <p class="py-6">Browse the entire collection.  Click the theme to filter by themes such as: <a href="/lego/sets?theme=Technic" class="btn btn-primary btn-xs">Technic</a> <a href="/lego/sets?theme=Classic Town" class="btn btn-primary btn-xs">Classic Town</a>  <a href="/lego/sets?theme=Supplemental" class="btn btn-primary btn-xs">Supplemental</a> </p>
+              </div>
+            </div>
+        </div>
+
+
+        <div class="overflow-x-auto overflow-y-hidden">
+            <table class="table table-zebra">
+              <tbody>
+                <!-- row 1 -->
+                <tr>
+                    <% sets.forEach(user=>{ %>
+                        <tr>
+                            <td>
+                                <div class="avatar">
+                                    <div class="w-24 rounded">
+                                      <img src=<%= user.img_url %> />
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <%= user.name %> | <a href="/lego/sets?theme=Technic" class="btn  mt-2 btn-xs"><%= user.theme %></a>
+                            </td>
+                            <td><span class="font-bold">Year: </span> <%= user.year %> - <span class="font-bold">Parts:</span> <%= user.num_parts %></td>
+                            <th>
+                            <a href=<%= "/lego/sets/" + user.set_num %> class="btn btn-xs">details</a>
+                            </th>
+                            
+                        </tr>
+
+                        
+                      <% }) %>
+
+              
+            </table>
+        </div>
+    </div>
+</body>
+</html>

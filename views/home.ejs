@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lego Collection</title>
+  <link rel="stylesheet" href="/css/main.css" />
+</head>
+
+<body >
+    <!-- <nav>
+        <h2><a href="/">Lego Collection</a></h2>
+        <a href="/about">About</a>
+        
+    </nav> -->
+    <%- include('partials/navbar' , {page: '/'})%>
+
+    <div class="container mx-auto">
+
+      <div class="hero bg-base-200 rounded-lg p-6">
+        <div class="hero-content text-center ">
+          <div>
+            <h1 class="text-5xl font-bold">Best Lego Collection!</h1>
+            <p class="py-6">A Lego collection is a curated assortment of Lego sets and pieces, often built around a specific theme or personal preferences, representing a diverse range of creative possibilities. </p>
+            <a href="/lego/sets" class="btn btn-primary">Get Started</a>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="container mx-auto"> -->
+        <div class="grid grid-cols-3 p-auto">
+          <!-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"> -->
+          <div class="">
+            <div class="card w-96 bg-base-100 shadow-xl">
+              <figure>
+                <img class="w-full" src="https://cdn.rebrickable.com/media/sets/001-1.jpg" alt="legoset" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Gears</h2>
+                <p>This set was released in America (USA/CAN) by Samsonite in 1965. It was re-released in 1969 as an educational set (322-4). It was never released in Europe.</p>
+                <div class="card-actions justify-end">
+                  <a href="/lego/sets/001-1" class="btn btn-primary">Buy Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="card w-96 bg-base-100 shadow-xl">
+              <figure>
+                <img class="w-full" src="https://cdn.rebrickable.com/media/sets/0016-1.jpg" alt="legoset" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Castle Mini Figures</h2>
+                <p>This set was released in America (USA/CAN) by Samsonite in 1965. It was re-released in 1969 as an educational set (322-4). It was never released in Europe.</p>
+
+                <div class="card-actions justify-end">
+                  <a href="/lego/sets/0016-1" class="btn btn-primary">Buy Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="card w-96 bg-base-100 shadow-xl">
+              <figure>
+                <img class="w-full" src="https://cdn.rebrickable.com/media/sets/0011-3.jpg" alt="legoset" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Castle 2 for 1 Bonus Offer</h2>
+                <p>This set was released in America (USA/CAN) by Samsonite in 1965. It was re-released in 1969 as an educational set (322-4). It was never released in Europe.</p>
+
+                <div class="card-actions justify-end">
+                  <a href="/lego/sets/0011-3" class="btn btn-primary">Buy Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+</body>
+
+</html>

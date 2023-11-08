@@ -1,0 +1,16 @@
+<div class="navbar bg-base-100" >
+    <div class="flex-1">
+      <a class="btn btn-ghost normal-case text-xl" href="/">Lego Collection</a>
+    </div>
+  
+    
+    <div class="navbar-center hidden sm:flex">
+      <ul class="menu menu-horizontal px-1">
+
+          <!-- <li><a href="/about">About</a></li> -->
+          <li><a href="/lego/sets" <% if (currentRoute == "/lego/sets") { %> class="active" <% } %>>View Collection</a></li>
+          <li><a href="/about" <% if (currentRoute == "/about") { %> class="active" <% } %>>About</a></li>
+        </ul>
+    </div>
+    
+</div> 

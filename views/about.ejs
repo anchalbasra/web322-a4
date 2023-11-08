@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lego Collection</title>
+  <link rel="stylesheet" href="/css/main.css" />
+</head>
+
+<body >
+    <!-- <nav>
+        <h2><a href="/">Lego Collection</a></h2>
+        <a href="/about">About</a>
+        
+    </nav> -->
+    <%- include('partials/navbar', {page: '/about'}) %>
+    <div class="container mx-auto">
+          <div class="hero bg-base-200 rounded-lg p-6">
+            <div class="hero-content text-center ">
+              <div class="max-w-md">
+                <h1 class="text-5xl font-bold">About</h1>
+                <p class="py-6">All about me</p>
+                <p class="py-6">Welcome to my world of bricks and endless imagination! I'm <b>Anchal Basra</b>, the passionate mind behind this LEGO wonderland. As a lifelong enthusiast and collector, LEGO sets have been an integral part of my journey, inspiring creativity and sparking joy since my earliest memories.</p>
+              </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2">
+            <div class="">
+              <div class="card w-96 bg-base-100 shadow-xl">
+                <figure>
+                  <img class="w-full" src="https://cdn.rebrickable.com/media/sets/001-1.jpg" alt="legoset" />
+                </figure>
+              </div>
+            </div>
+            <div class="">
+              <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card-body">
+                  <h2 class="card-title">My hobbies</h2>
+                  <ul>
+                    <li>Photography</li>
+                    <li>Dancing</li>
+                    <li>Traveling</li>
+                    <li>Drawing and Painting</li>
+                  </ul>
+                  <p>This set was released in America (USA/CAN) by Samsonite in 1965. It was re-released in 1969 as an educational set (322-4). It was never released in Europe.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+    </div>
+
+
+  
+</body>
+
+</html>
