@@ -8,9 +8,9 @@
 * 
 *  Name: Aanchal Basra
 *  Student ID: 156175200
-*  Date: 21/10/2023
+*  Date: 08/11/2023
 *
-*  Published URL: https://gray-dhole-toga.cyclic.app/
+*  Published URL: https://crowded-stole-elk.cyclic.app/
 *
 ********************************************************************************/
 
@@ -44,6 +44,7 @@ app.get('/about', (req, res) => {
 
 app.get('/lego/sets', (req, res) => {
     if(req.query.theme){
+        console.log(req.query.theme)
         legoData.getSetsByTheme(req.query.theme).then((legoSets=>{
             // res.json(setByNum);
             res.render("sets", {sets: legoSets});

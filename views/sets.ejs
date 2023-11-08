@@ -38,7 +38,7 @@
                                 </div>
                             </td>
                             <td>
-                                <%= user.name %> | <a href="/lego/sets?theme=Technic" class="btn  mt-2 btn-xs"><%= user.theme %></a>
+                                <%= user.name %> | <a href=<%= "/lego/sets?theme=" + user.theme %> class="btn  mt-2 btn-xs"><%= user.theme %></a>
                             </td>
                             <td><span class="font-bold">Year: </span> <%= user.year %> - <span class="font-bold">Parts:</span> <%= user.num_parts %></td>
                             <th>
